@@ -1,0 +1,34 @@
+html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Beneficiário</title>
+</head>
+<body>
+
+    <h1>Editar Beneficiário</h1>
+
+    <form method="POST">
+
+        <label>Nome:</label>
+        <input type="text" name="nome" value="{{ pessoa.nome }}" required><br><br>
+
+        <label>Telefone:</label>
+        <input type="text" name="telefone" value="{{ pessoa.telefone or '' }}"><br><br>
+
+        <label>Endereço:</label>
+        <input type="text" name="endereco" value="{{ pessoa.endereco or '' }}"><br><br>
+
+        <label>Bairro:</label>
+        <input type="text" name="bairro" value="{{ pessoa.bairro or '' }}"><br><br>
+
+        <button type="submit">Salvar alterações</button>
+
+    </form>
+
+    <br>
+    <a href="/lista-beneficiarios">Voltar à lista</a>
+
+</body>
+</html>

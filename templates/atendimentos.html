@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Atendimentos</title>
+</head>
+<body>
+
+    <h1>Cadastro de Atendimentos</h1>
+
+    <form action="/atendimentos" method="POST">
+
+        <label>Nome do beneficiário:</label>
+        <input type="text" name="beneficiario" required><br><br>
+
+        <label>Tipo de atendimento:</label>
+        <input type="text" name="tipo" required><br><br>
+
+        <label>Data do atendimento:</label>
+        <input type="date" name="data" required><br><br>
+
+        <label>Observações:</label>
+        <textarea name="observacoes"></textarea><br><br>
+
+        <button type="submit">Registrar atendimento</button>
+
+    </form>
+
+    <br>
+    <a href="/lista-atendimentos">Ver atendimentos registrados</a>
+    <br><br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Atendimentos</title>
+</head>
+<body>
+
+    <h1>Atendimentos registrados</h1>
+
+    {% for atendimento in atendimentos %}
+        <p>
+            <strong>Beneficiário:</strong> {{ atendimento.beneficiario }}<br>
+            <strong>Tipo de atendimento:</strong> {{ atendimento.tipo }}<br>
+            <strong>Data:</strong> {{ atendimento.data }}<br>
+            <strong>Observações:</strong> {{ atendimento.observacoes }}
+        </p>
+        <hr>
+    {% else %}
+        <p>Nenhum atendimento registrado.</p>
+    {% endfor %}
+
+    <a href="/atendimentos">Novo atendimento</a><br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>

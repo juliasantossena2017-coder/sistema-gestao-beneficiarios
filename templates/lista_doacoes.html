@@ -1,0 +1,29 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Doações</title>
+</head>
+<body>
+
+    <h1>Doações cadastradas</h1>
+
+    {% for doacao in doacoes %}
+        <p>
+            <strong>Descrição:</strong> {{ doacao.descricao }}<br>
+            <strong>Quantidade:</strong> {{ doacao.quantidade }}<br>
+            <strong>Data:</strong> {{ doacao.data }}<br>
+            <strong>Responsável:</strong> {{ doacao.responsavel }}
+        </p>
+        <hr>
+    {% else %}
+        <p>Nenhuma doação cadastrada.</p>
+    {% endfor %}
+
+    <a href="/doacoes">Nova doação</a><br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
+```

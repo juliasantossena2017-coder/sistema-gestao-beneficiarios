@@ -1,0 +1,33 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Beneficiários</title>
+</head>
+<body>
+
+    <h1>Beneficiários cadastrados</h1>
+
+    {% for pessoa in beneficiarios %}
+        <p>
+            <strong>Nome:</strong> {{ pessoa.nome }}<br>
+            <strong>Telefone:</strong> {{ pessoa.telefone }}<br>
+            <strong>Endereço:</strong> {{ pessoa.endereco }}<br>
+            <strong>Bairro:</strong> {{ pessoa.bairro }}<br><br>
+
+            <a href="/editar-beneficiario/{{ pessoa.id }}">
+                <button>Editar</button>
+            </a>
+        </p>
+        <hr>
+    {% else %}
+        <p>Nenhum beneficiário cadastrado.</p>
+    {% endfor %}
+
+    <a href="/beneficiarios">Novo cadastro</a><br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
+```

@@ -1,0 +1,35 @@
+```html
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Cadastro de Doações</title>
+</head>
+<body>
+
+    <h1>Cadastro de Doações</h1>
+
+    <form action="/doacoes" method="POST">
+
+        <label>Descrição da doação:</label>
+        <input type="text" name="descricao" required><br><br>
+
+        <label>Quantidade:</label>
+        <input type="number" name="quantidade" required><br><br>
+
+        <label>Data da doação:</label>
+        <input type="date" name="data" required><br><br>
+
+        <label>Responsável pela doação:</label>
+        <input type="text" name="responsavel"><br><br>
+
+        <button type="submit">Cadastrar doação</button>
+
+    </form>
+
+    <br>
+    <a href="/">Voltar ao menu</a>
+
+</body>
+</html>
+```

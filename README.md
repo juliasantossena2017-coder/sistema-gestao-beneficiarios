@@ -3,3 +3,4 @@
 Projeto desenvolvido no curso de Análise e Desenvolvimento de Sistemas (ADS).
 
 O objetivo é facilitar o cadastro de beneficiários, o registro de doações e o controle de atendimentos. 
+O projeto utiliza testes automatizados para verificar o funcionamento do sistema.
